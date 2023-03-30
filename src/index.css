@@ -1,0 +1,168 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto+Mono:wght@500&family=Ubuntu+Mono:wght@700&family=Ubuntu:ital,wght@0,300;1,300&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Ubuntu';
+    padding:0;
+}
+
+
+.bethel__navbar-content{
+    display: flex;
+    color: #000;
+    padding:  10px 10%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bethel__navbar-content nav ul a{
+    margin-left: 20px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+
+}
+.bethel__navbar-content nav ul a:hover{
+    opacity: 0.6;
+}
+.bethel__navbar-list-left button{
+    color:#F58D00; 
+    border:0.5px solid #F58D00; 
+    padding:5px 10px;
+    background-color:#fff;
+    border-radius:5px;
+    
+}
+.bethel__navbar-list-left button:hover{
+    color:#fff;
+    background-color: #F58D00;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+.bethel__navbar-list-left input{
+    outline: none;
+    border-radius:5px;
+    border: 2px solid ;
+
+}
+.bethel__header-content{
+    width: 100%;
+    background-color: #F58D00;
+    display: flex;
+    justify-content: space-between;
+    padding: 132px 10%;
+}
+
+.behtel__header-input-hidden{
+    opacity: 0;
+    position: absolute;
+    width: 70px;
+}
+input[type=checkbox]+label{
+    font-weight: 700;
+    padding: 2px 10px;
+    border: 2px solid #b6b5b5;
+    background: #b6b5b5;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+input[type=checkbox]+label:hover{
+    background-color: #F17228;
+    border-radius:5px;
+    border: 2px solid #F17228;
+}
+
+input[type=checkbox]:checked+label{
+    background-color: #F17228;
+    border-radius:5px;
+    border: 2px solid #F17228;
+}
+
+.bethel__header-right-content-address{
+    background-color: #fff;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 30px 10px;
+}
+.bethel__header-right-content-address button:hover{
+    opacity: 0.8;
+}
+.bethel__header-right-content-address input[type=text]:focus{
+    border-color: #F5F1F0 !important;
+
+    
+}
+.bethel__header-left-image{
+    background-image: url('./assets/header.jpg');
+    background-size: cover;
+    width: 400px;
+    border-radius: 10px;
+    margin-left: 5px;
+}
+.toggle-button{
+    display: none;
+}
+
+@media screen and (max-width:985px) {
+   .bethel__navbar-content{
+    display: block;
+    width:100%;
+    height: 100vh;
+    background-color: #F58D00;
+    /* justify-content: center;
+    align-items: center;
+    text-align: center; */
+    position: absolute;
+   }
+   .bethel__navbar-content p{
+    position: absolute;
+    top: 25px;
+   }
+   .bethel__navbar-list-left{
+    position: absolute;
+    right: 200px;
+    top: 20px;
+   }
+   .bethel__navbar-content nav {
+    margin-top: 30px;
+    position: absolute;
+    width: auto;
+    background:#fff;
+    text-align: left;
+    top: 22px;
+    right: 120px;
+    padding: 5px;
+    border-radius: 5px 0 5px 5px;
+   }
+   .bethel__navbar-content nav ul a{
+    display: block;
+    text-transform:uppercase;
+    margin: 10px;
+
+   }
+   .bethel__navbar-list-left{
+    display: block;
+   }
+   .toggle-button{
+    display: block;
+    position:absolute;
+    top:20px;
+    right:100px;
+    color:#F58D00; 
+    border:0.5px solid #F58D00; 
+    padding:5px 10px;
+    background-color:#fff;
+    border-radius:5px;
+   }
+   .toggle-button:hover{
+    color:#fff;
+    background-color: #F58D00;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+   }
+}
+
+
+
+
