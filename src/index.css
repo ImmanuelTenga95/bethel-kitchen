@@ -23,6 +23,7 @@
     font-weight: 700;
 
 }
+
 .bethel__navbar-content nav ul a:hover{
     opacity: 0.6;
 }
@@ -108,11 +109,6 @@ input[type=checkbox]:checked+label{
    .bethel__navbar-content{
     display: block;
     width:100%;
-    height: 100vh;
-    background-color: #F58D00;
-    /* justify-content: center;
-    align-items: center;
-    text-align: center; */
     position: absolute;
    }
    .bethel__navbar-content p{
@@ -131,7 +127,7 @@ input[type=checkbox]:checked+label{
     background:#fff;
     text-align: left;
     top: 22px;
-    right: 120px;
+    right: 12%;
     padding: 5px;
     border-radius: 5px 0 5px 5px;
    }
@@ -144,11 +140,14 @@ input[type=checkbox]:checked+label{
    .bethel__navbar-list-left{
     display: block;
    }
+   .bethel__navbar-list-left .search{
+    display: none;
+   }
    .toggle-button{
     display: block;
     position:absolute;
     top:20px;
-    right:100px;
+    right:10%;
     color:#F58D00; 
     border:0.5px solid #F58D00; 
     padding:5px 10px;
@@ -161,6 +160,27 @@ input[type=checkbox]:checked+label{
     cursor: pointer;
     transition: .5s ease-in-out;
    }
+   .show{
+    display: block;
+    transition: .5s ease-in-out;
+    }
+     .show-hidden{
+        display: none;
+        transition: .5s ease-in-out;
+    }
+}
+@media screen and (max-width:718px) {
+    .bethel__navbar-list-left{
+        display: none;
+    }
+}
+@media screen and (max-width:318px) {
+    .bethel__navbar-list-left{
+        display: none;
+    }
+    .bethel__navbar-content p{
+        font-size: x-small;
+    }
 }
 
 
